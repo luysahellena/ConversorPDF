@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compactador de Arquivos</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Opções</a>
+                    <ul>
+                        <li><a href="#">Compactar</a></li>
+                        <li><a href="#">Juntar</a></li>
+                        <li><a href="#">Converter</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>Compactador de Arquivos</h1>
+            <p>Compacte, junte ou converta seus arquivos em segundos!</p>
+            <form>
+                <input type="file" id="file" multiple>
+                <button class="action" data-action="compact">Compactar</button>
+                <button class="action" data-action="join">Juntar</button>
+                <button class="action" data-action="convert">Converter</button>
+            </form>
+        </section>
+        <section class="result" id="result">
+            <!-- Resultado do compactador -->
+            <h2>Extrair texto de PDF</h2>
+            <p>Texto extraído:</p>
+            <textarea id="extracted-text" readonly></textarea>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Compactador de Arquivos</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
